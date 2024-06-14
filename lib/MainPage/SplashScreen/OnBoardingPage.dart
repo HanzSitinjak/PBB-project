@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import './HomePage.dart';
+import './HomePage.dart' as homePage;
 import '../Auth/LoginPage.dart';
 
 class OnboardingPage extends StatelessWidget {
@@ -31,7 +31,6 @@ class OnboardingPage extends StatelessWidget {
               ],
             ),
           ),
-
           Container(
             margin: EdgeInsets.symmetric(vertical: 20.0),
             padding: EdgeInsets.all(2.0),
@@ -44,7 +43,7 @@ class OnboardingPage extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => HomePage()),
+                  MaterialPageRoute(builder: (context) => homePage.HomePage()),
                 );
               },
               style: TextButton.styleFrom(
@@ -54,12 +53,10 @@ class OnboardingPage extends StatelessWidget {
             ),
           ),
           Spacer(),
-
           Align(
             alignment: Alignment.bottomCenter,
             child: GestureDetector(
               onTap: () {
-                // Tindakan saat teks "Sign In" ditekan
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => LoginPage()),

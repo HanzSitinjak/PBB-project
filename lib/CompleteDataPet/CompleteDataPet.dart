@@ -1,3 +1,4 @@
+import 'package:doca_project/MainPage/HomePage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -256,7 +257,7 @@ class _CompleteData2State extends State<CompleteData2> {
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => CompleteData2()),
+                        MaterialPageRoute(builder: (context) => HomePage()),
                       );
                     },
                     style: ElevatedButton.styleFrom(
